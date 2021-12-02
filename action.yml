@@ -1,0 +1,17 @@
+name: 'Strip HTML from Markdown'
+author: Loïc Denuzière
+description: 'Strip HTML content from a Markdown file'
+inputs:
+  input-path:
+    description: 'Path to the markdown file to strip'
+    required: true
+  output-path:
+    description: 'Path to the output markdown file'
+    required: true
+  encoding:
+    description: 'The file encoding to use'
+    required: false
+    default: utf8
+runs:
+  using: 'node12'
+  main: 'index.js'
