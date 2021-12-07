@@ -16,7 +16,7 @@ GitHub action to strip HTML tags from a Markdown file.
 
 * `input-path` (mandatory): Path to the input Markdown file that contains some HTML.
 
-* `output-path` (mandatory): Path to the output Markdown file stripped of HTML.  
-    May be equal to `input-path` to modify the file in place.
+* `output-path` (optional): Path to the output Markdown file stripped of HTML.  
+    If unspecified, use `input-path`, ie modify the file in place.
 
 * `encoding` (optional): The text encoding of the file. Default: `utf8`.

@@ -7,7 +7,8 @@ inputs:
     required: true
   output-path:
     description: 'Path to the output markdown file'
-    required: true
+    required: false
+    default:
   encoding:
     description: 'The file encoding to use'
     required: false
