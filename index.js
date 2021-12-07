@@ -7,7 +7,7 @@ const strip = require('remark-strip-html');
 
 try {
   const inputPath = core.getInput('input-path');
-  const outputPath = core.getInput('output-path');
+  const outputPath = core.getInput('output-path') || inputPath;
   const encoding = core.getInput('encoding');
 
   const inputText = fs.readFileSync(inputPath, encoding);
