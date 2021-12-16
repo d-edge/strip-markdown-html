@@ -1,6 +1,12 @@
-# strip-markdown-html
+<br />
 
-GitHub action to strip HTML tags from a Markdown file.
+<p align="center">
+    <img src="https://raw.githubusercontent.com/d-edge/strip-markdown-html/main/strip-html.png" alt="strip-markdown-html logo" height="140">
+</p>
+
+<br />
+
+Strip-markdown-html is a GitHub action to strip HTML tags from a Markdown file.
 
 ## Example usage
 
@@ -20,3 +26,7 @@ GitHub action to strip HTML tags from a Markdown file.
     If unspecified, use `input-path`, ie modify the file in place.
 
 * `encoding` (optional): The text encoding of the file. Default: `utf8`.
+
+## License
+
+MIT
