@@ -12,7 +12,7 @@ Strip-markdown-html is a GitHub action to strip HTML tags from a Markdown file.
 
 ```yaml
 - name: Strip HTML from README
-  uses: d-edge/strip-markdown-html@v0.1
+  uses: d-edge/strip-markdown-html@v0.2
   with:
     input-path: README.md
     output-path: out/README.md
