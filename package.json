@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ncc build -m src/index.js -o dist",
+    "watch": "ncc build -wm src/index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
