@@ -12238,10 +12238,9 @@ try {
     .use(strip)
     .process(inputText, (err, outputText) =>
       {
-        console.log(outputText);
         if (err) throw err;
         io.mkdirP(path.dirname(outputPath));
-        fs.writeFileSync(outputPath, String(outputText), encoding);
+        fs.writeFileSync(outputPath, outputText, encoding);
       });
 } catch (error) {
   core.setFailed(error.message);
