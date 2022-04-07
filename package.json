@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "ncc build src/index.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,5 +15,8 @@
     "@actions/io": "^1.1.1",
     "remark": "^13.0.0",
     "remark-strip-html": "^1.0.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.3"
   }
 }
