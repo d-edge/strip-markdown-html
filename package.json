@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/io": "^1.1.1"
+    "@actions/io": "^1.1.1",
+    "glob": "^8.0.3"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.33.3"
