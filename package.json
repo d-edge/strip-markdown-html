@@ -1,5 +1,5 @@
 {
-  "name": "strip-markdown-html",
+  "name": "order-by-json",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,9 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/io": "^1.1.1",
-    "remark": "^13.0.0",
-    "remark-strip-html": "^1.0.2"
+    "@actions/io": "^1.1.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.33.3"
