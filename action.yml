@@ -2,16 +2,15 @@ name: 'Order JSON by property'
 author: Aloïs de Gouvello
 description: 'Order objects by a given property from a json file'
 inputs:
+  property:
+    description: 'Property to order by'
+    required: true
   input-path:
     description: 'Path to the markdown file to strip'
     required: true
   output-path:
     description: 'Path to the output markdown file'
     required: false
-    default:
-  property:
-    description: 'Property to order by'
-    required: true
     default:
   encoding:
     description: 'The file encoding to use'
