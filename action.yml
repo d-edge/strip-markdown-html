@@ -1,12 +1,16 @@
-name: 'Strip HTML from Markdown'
-author: Loïc Denuzière
-description: 'Strip HTML content from a Markdown file'
+name: 'Order JSON by property'
+author: Aloïs de Gouvello
+description: 'Order objects by a given property from a json file'
 inputs:
   input-path:
     description: 'Path to the markdown file to strip'
     required: true
   output-path:
     description: 'Path to the output markdown file'
+    required: false
+    default:
+  property:
+    description: 'Property to order by'
     required: false
     default:
   encoding:
