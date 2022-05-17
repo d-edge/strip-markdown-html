@@ -11,7 +11,7 @@ inputs:
     default:
   property:
     description: 'Property to order by'
-    required: false
+    required: true
     default:
   encoding:
     description: 'The file encoding to use'
