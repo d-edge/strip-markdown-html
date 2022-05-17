@@ -11,10 +11,10 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**.json'
+      - '**.md'
   pull_request:
     paths-ignore:
-      - '**.json'
+      - '**.md'
   workflow_dispatch:
 
 jobs:
