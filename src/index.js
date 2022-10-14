@@ -21,5 +21,5 @@ try {
         fs.writeFileSync(outputPath, outputText, encoding);
       });
 } catch (error) {
-  core.setFailed(error.message);
+  core.setFailed(error);
 }
