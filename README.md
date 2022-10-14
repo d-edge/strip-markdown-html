@@ -29,4 +29,4 @@ Strip-markdown-html is a GitHub action to strip HTML tags from a Markdown file.
 
 ## License
 
-MIT
+[MIT](https://raw.githubusercontent.com/d-edge/strip-markdown-html/main/LICENSE)
