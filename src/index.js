@@ -18,7 +18,7 @@ try {
       {
         if (err) throw err;
         io.mkdirP(path.dirname(outputPath));
-        fs.writeFileSync(outputPath, outputText, encoding);
+        fs.writeFileSync(outputPath, outputText.trim(), encoding);
       });
 } catch (error) {
   core.setFailed(error);
