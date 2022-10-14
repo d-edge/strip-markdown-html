@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.9.1",
     "@actions/io": "^1.1.1",
     "remark": "^13.0.0",
     "remark-strip-html": "^1.0.2"
