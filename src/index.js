@@ -1,8 +1,9 @@
 const fs = require('fs');
+const fsp = require('fs/promises');
 const path = require('path');
 const core = require('@actions/core');
 const io = require('@actions/io');
-const remark = require('remark');
+const {remark} = require('remark');
 const strip = require('remark-strip-html');
 
 try {
@@ -14,11 +15,12 @@ try {
 
   remark()
     .use(strip)
-    .process(inputText, (err, outputText) =>
+    .process(inputText, async (err, outputFile) =>
       {
         if (err) throw err;
-        io.mkdirP(path.dirname(outputPath));
-        fs.writeFileSync(outputPath, outputText.trim(), encoding);
+        await io.mkdirP(path.dirname(outputPath));
+        const outputText = String(outputFile).trim();
+        await fsp.writeFile(outputPath, outputText, encoding);
       });
 } catch (error) {
   core.setFailed(error);
